@@ -16,7 +16,7 @@ export const Links = () => {
 			<AppLink link="/forgot-password" className="mb_40" text="Forgot password" />
 			<AppLink link="/confirm-password" className="mb_40" text="Send password" />
 			<AppLink link="/new-password" className="mb_40" text="New password" />
-			<AppLink link="/cashbox/create" className="mb_40" text="Cashbox Income" />
+			<AppLink link="/cashbox/income" className="mb_40" text="Cashbox Income" />
 		</div>
 	);
 };

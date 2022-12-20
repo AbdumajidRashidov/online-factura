@@ -12,7 +12,6 @@ const IncomeSingle = lazy(() => import("./pages/IncomeSingle"));
 export const CashboxRoutes = [
 	{
 		path: "/",
-		index: true,
 		element: <CashboxOrders />,
 	},
 	{

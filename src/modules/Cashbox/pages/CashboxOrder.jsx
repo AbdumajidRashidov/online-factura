@@ -29,23 +29,108 @@ const CashboxOrder = () => {
 				method={"post"}
 				fields={[
 					{
-						name: "kitchen_menu_id",
+						name: "Тип счета",
 						validationType: "object",
 						validations: [{ type: "required" }],
 						onSubmitValue: (value) => get(value, "id"),
 					},
 					{
-						name: "quantity",
+						name: "Номер счет-фактуры",
 						validations: [{ type: "required" }],
 					},
 					{
-						name: "type",
+						name: "Дата документ",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "номер контракта",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Дата до",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "ИНН",
 						validationType: "object",
+						validations: [{ type: "required" }],
 						onSubmitValue: (value) => get(value, "value"),
 					},
 					{
-						name: "status",
-						value: 10,
+						name: "НДС регистрационный номер",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Номер счета",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Адрес",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Директор",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Главный бухгалтер",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Номер счета",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Односторонний счет?",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Компания-партнер",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "МФО",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Номер счета",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Адрес",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Директор",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Главный бухгалтер",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "file_id",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Выберите доверенность",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Номер доверенности",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Дата доверенности",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "ИНН-type",
+						validations: [{ type: "required" }],
+					},
+					{
+						name: "Ответственное лицо ФИО",
+						validations: [{ type: "required" }],
 					},
 				]}
 			>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -35,6 +35,15 @@ export const App = () => {
 			},
 		},
 	});
+
+	useEffect(() => {
+		if (storage.get("token")) {
+			navigate("/");
+		} else {
+			navigate("/login");
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [storage.get("token")]);
 
 	return (
 		<>
