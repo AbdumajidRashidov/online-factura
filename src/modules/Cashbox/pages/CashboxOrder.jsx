@@ -7,8 +7,9 @@ import { FastField } from "formik";
 import { ReactComponent as CloseIcon } from "assets/icons/btn-close.svg";
 import { ReactComponent as CheckIcon } from "assets/icons/check.svg";
 
-import "../style/cashbox.scss";
 import { FileUpload } from "components/index";
+
+import "../style/cashbox.scss";
 
 const CashboxOrder = () => {
 	return (

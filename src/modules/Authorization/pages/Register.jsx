@@ -21,7 +21,7 @@ const Register = () => {
 
 	const codeSentModal = useOverlay({
 		uniqueName: "codeSent",
-		onClose: () => navigate("/cashbox/create", { state: { fromRegister: true } }),
+		onClose: () => navigate("/", { state: { fromRegister: true } }),
 	});
 
 	return (

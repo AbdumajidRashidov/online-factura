@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { serialize } from "object-to-formdata";
-import { get, isFunction } from "lodash";
 
 import { httpClient } from "services";
 
@@ -15,6 +14,7 @@ export const AttachFile = ({
 	accept = ".png,.jpg,.jpeg",
 	getFile,
 	form,
+	className,
 	field,
 }) => {
 	const [file, setFile] = useState();
@@ -35,7 +35,7 @@ export const AttachFile = ({
 
 	return (
 		<UploadBase
-			className="d-flex align-items-center justify-content-center"
+			className="d-flex"
 			accept={accept}
 			onFileUpload={handleImageUpload}
 			isDisabled={file}
@@ -43,7 +43,7 @@ export const AttachFile = ({
 			<AttachIcon className="mr_10" />
 			<Typography
 				Type="span"
-				className="color_txt-secondary fz_18"
+				className={`${className} color_txt-secondary fz_18`}
 				text={file ? file.name : title}
 			/>
 		</UploadBase>

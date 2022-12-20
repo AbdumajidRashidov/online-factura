@@ -35,7 +35,7 @@ const Login = () => {
 					console.log(user);
 					dispatch(auth.success(get(user, "token")));
 					storage.set("token", get(user, "token"));
-					navigate("/cashbox/create");
+					navigate("/");
 				}}
 				fields={[
 					{

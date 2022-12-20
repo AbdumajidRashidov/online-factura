@@ -114,4 +114,135 @@
 	background-color: #fff;
 	padding: 24px;
 	margin-bottom: 24px;
+	border-radius: 8px;
+}
+.account-card {
+	background-color: #fff;
+	padding: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 8px;
+	&__header {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		div {
+			h3 {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 30px;
+				letter-spacing: 0.02em;
+				color: #303030;
+			}
+			p {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0.02em;
+				color: #303030;
+			}
+			.num {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 18px;
+				text-transform: uppercase;
+				color: #0fbe7b;
+				margin-bottom: 17px;
+			}
+		}
+		span {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			color: #2b63c0;
+		}
+	}
+	&__main {
+		display: flex;
+		p {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			color: #333333;
+		}
+		.name {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #303030;
+			max-width: 250px;
+			margin-left: 10px;
+		}
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				color: #303030;
+			}
+			span {
+				margin-right: 75px;
+			}
+			.btn {
+				padding: 5px 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+	}
+}
+.status-card {
+	background-color: #fff;
+	padding: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	&__header {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		div {
+			h3 {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 30px;
+				letter-spacing: 0.02em;
+				color: #303030;
+			}
+			p {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 30px;
+				letter-spacing: 0.02em;
+				color: #ffa41d;
+			}
+		}
+		.attach-file {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			color: #2b63c0;
+		}
+	}
 }
