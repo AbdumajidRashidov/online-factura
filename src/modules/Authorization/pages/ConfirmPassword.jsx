@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { FastField } from "formik";
 import { get } from "lodash";
 
@@ -121,9 +121,9 @@ const ConfirmPassword = () => {
 									{() => (
 										<>
 											Пароль не получен?{" "}
-											<a href="#" className="color_brand-blue fw_600">
+											<Link to="#" className="color_brand-blue fw_600">
 												Отправить ещё раз
-											</a>
+											</Link>
 										</>
 									)}
 								</Typography>

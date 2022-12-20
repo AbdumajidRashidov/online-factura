@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FastField } from "formik";
 import { get } from "lodash";
 
@@ -91,9 +91,9 @@ const Register = () => {
 									<>
 										"Регистрируясь, вы соглашаетесь с нашими условиями в
 										отношении нашей{" "}
-										<a className="color_brand-blue" href="#">
+										<Link className="color_brand-blue" to="#">
 											политики конфиденциальности
-										</a>
+										</Link>
 										.
 									</>
 								}
