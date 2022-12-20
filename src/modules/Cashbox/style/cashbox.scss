@@ -1,0 +1,117 @@
+.table-header {
+	h3 {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 0.02em;
+		color: #303030;
+	}
+	margin-bottom: 16px;
+	.status_list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-item--canceled {
+			margin-right: 16px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.01em;
+			color: #303030;
+			display: flex;
+			align-items: center;
+			&::before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				margin-right: 5px;
+				position: relative;
+				top: 0;
+				background-color: #fe346e;
+			}
+		}
+		&-item--followed {
+			margin-right: 16px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.01em;
+			color: #303030;
+			display: flex;
+			align-items: center;
+			&::before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				margin-right: 5px;
+				position: relative;
+				top: 0;
+				background-color: #0fbe7b;
+			}
+		}
+		&-item--waiting {
+			margin-right: 16px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.01em;
+			color: #303030;
+			display: flex;
+			align-items: center;
+			&::before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				margin-right: 5px;
+				position: relative;
+				top: 0;
+				background-color: #ffa41d;
+			}
+		}
+		&-item--draft {
+			margin-right: 16px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.01em;
+			color: #303030;
+			display: flex;
+			align-items: center;
+			&::before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				margin-right: 5px;
+				position: relative;
+				top: 0;
+				background-color: #d9d9d9;
+			}
+		}
+	}
+}
+.filter-wrapper {
+	background-color: #fff;
+	padding: 24px;
+}
+.wrapper {
+	background-color: #fff;
+	padding: 24px;
+	margin-bottom: 24px;
+}
