@@ -1,5 +1,5 @@
 import React from "react";
-import { FastField, Field } from "formik";
+import { Field } from "formik";
 import { get } from "lodash";
 
 import { utils } from "services";

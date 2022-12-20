@@ -19,5 +19,6 @@ export const useScroll = (element, onGetEnd, offset = 0) => {
 		return () => {
 			element.removeEventListener("scroll", getEndOfElement);
 		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 };

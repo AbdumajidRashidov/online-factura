@@ -5,7 +5,7 @@ import { get } from "lodash";
 import config from "config";
 
 import Containers from "containers";
-import { ModalDefault, Fields, Button, TabBase, FileUpload } from "components/index";
+import { ModalDefault, Fields, Button, TabBase } from "components/index";
 
 export const StoreModal = ({
 	storeType,

@@ -43,6 +43,7 @@ export const useOverlay = ({ uniqueName, onOpen, onClose } = {}) => {
 		return () => {
 			document.removeEventListener("keydown", handlePressEsc);
 		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return {

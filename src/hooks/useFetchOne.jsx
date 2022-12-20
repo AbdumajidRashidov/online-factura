@@ -28,6 +28,7 @@ export const useFetchOne = ({
 
 	useEffect(() => {
 		if (refetchStatus) single.refetch();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [refetchStatus]);
 
 	return { ...single, setId };

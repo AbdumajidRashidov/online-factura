@@ -5,7 +5,7 @@ import { get } from "lodash";
 import { time, utils } from "services";
 import { useGetLanguage, useOverlay } from "hooks";
 
-import { Button, Fields, ManufacturerModal, ModalDefault, ProductModal } from "components";
+import { Button, Fields, ModalDefault, ProductModal } from "components";
 import Containers from "containers";
 
 export const ProductIncomeModal = ({
