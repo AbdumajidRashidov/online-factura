@@ -7,7 +7,7 @@ import cn from "classnames";
 import { httpClient, queryBuilder } from "services";
 
 import { ControlLabel, ControlError } from "components/Common";
-import { DropdownIndicator, ValueContainer, MenuList } from "./components";
+import { DropdownIndicator, MenuList } from "./components";
 
 import "./Select.scss";
 
@@ -71,6 +71,7 @@ export const AsyncSelect = ({
 		if (isFunction(setDefaultValue)) {
 			loadOptions(null, null, loadOptionsParams).then((res) => setDefaultValue(res.options));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
@@ -90,10 +91,6 @@ export const AsyncSelect = ({
 				isDisabled={isDisabled}
 				isMulti={isMulti}
 				isClearable={isClearable}
-				// blurInputOnSelect={true}
-				// closeMenuOnSelect={true}
-				// closeMenuOnScroll={true}
-				// escapeClearsValue={false}
 				backspaceRemovesValue={true}
 				classNamePrefix="select"
 				onChange={handleChange}
