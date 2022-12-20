@@ -21,7 +21,7 @@ const IncomeSingle = () => {
 			/>
 
 			<div className="row">
-				<div className="col-7">
+				<div className="col-lg-7 mb_20">
 					<div className="account-card">
 						<div className="account-card__header">
 							<div>
@@ -61,7 +61,7 @@ const IncomeSingle = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-5">
+				<div className="col-lg-5 mb_20">
 					<div className="status-card">
 						<div className="status-card__header">
 							<div>
@@ -90,7 +90,7 @@ const IncomeSingle = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-12 mt_20">
+				<div className="col-lg-12">
 					<div className="wrapper">
 						<img src={documentImg} alt="doc" />
 					</div>
